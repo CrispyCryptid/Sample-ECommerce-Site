@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <title>ECommerce Site for Mom & Luis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Fantasy Fulfillment</title>
 </head>
 <body>
-    <nav class="dark">
-        <h3>Fantasy Fulfillment</h3>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>New</li>
-            <li>Limited Edition</li>
-            <li>Contact Us</li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-info text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fantasy Fulfillment, LLC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="#">New In Stock</a></li>
+              <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+              <li><a class="dropdown-item" href="#">Timeless Treasures</a></li>
+              <li><a class="dropdown-item" href="#">Sale Items</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
         </ul>
-    </nav>
-<img src="img-" alt="">
-<div>
-    <section>
-        <div class="card">
-            <p>Super funky, enthralling, and interesting intro to the rest of the site - think confident, kind, and suave!</p>
-        </div>
-    </section>
-</div>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-<!--References-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<!--End References Section-->
+  <!-- Main Section -->
+  <div class="container my-5">
+    <div class="row g-4">
+<!--Hero Section-->
+        <section class="hero-section text-black d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 text-center align-items-center">
+                        <h1 class="display-4 fw-bold mb-4">Create Something Amazing</h1>
+                        <p class="lead mb-4">Transform your ideas into reality with our modern design components and tools.</p>
+                        <button class="btn btn-outline-info btn-md px-4">Get Started</button>
+                        <button class="btn btn-outline-info btn-md px-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--End Hero Section-->
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="img/1.jpg" class="card-img-top" alt="Card image" />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <img src="img/2.jpg" class="card-img-top" alt="Card image" />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional Card 3 (Intro Message) -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <p class="card-text">Super funky, enthralling, and interesting intro to the rest of the site — think confident, kind, and suave! Draw customers in and make them want to stick around for a while.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

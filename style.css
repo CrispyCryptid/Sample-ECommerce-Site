@@ -1,5 +1,41 @@
 /*Stylesheet for index.html*/
 
-#banner {
-background-color: beige;
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    margin: 4px;
+    padding: 2px;
+}
+
+/*Navigation Bar*/
+navbar {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #7e7e7e80;
+}
+.navbar-brand {
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px #7e7e7e80;
+    text-decoration: rgb(255, 255, 255);
+}
+
+/*Buttons*/
+button { 
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(0, 98, 210, 0.789);
+}
+button:active {
+    background-color: rgba(0, 98, 210, 0.789);
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(25, 25, 25, 0.259) inset;
 }
